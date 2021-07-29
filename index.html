@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="description"
+            content="Ce test d'intégration en natif consiste à intégré en HTML5/CSS3 et Javascript une maquette
+        qui contient des animations. Ce test a été fait dans le but d'intégrer l'entreprise Adot "
+        />
+        <meta name="keywords" content="HTML, CSS, JavaScript" />
+        <meta name="author" content="De Yves DION deyvesdion.fr" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./src/style/style.css" />
+        <script src="./src/js/script.js"></script>
+        <link
+            rel="shortcut icon"
+            href="./asset/image/logo.png"
+            type="image/x-icon"
+        />
+        <title>Test d'intégration pour Adot</title>
+    </head>
+    <body onload="animation()">
+        <div class="container">
+            <div class="container__wrapper">
+                <!-- Top of page-->
+                <div class="top">
+                    <div class="logo__wrapper">
+                        <img
+                            src="./asset/image/logo.png"
+                            class="logo"
+                            alt="logo Krys"
+                        />
+                    </div>
+                    <!-- slider__wrapper -->
+                    <div class="slider__wrapper">
+                        <!-- slide__1 -->
+                        <div class="slide__wrap__1" id="slide__wrap__1">
+                            <p class="upper__case txt__1">prêts</p>
+                            <p class="upper__case txt__2">pour la rentrée</p>
+                            <p class="upper__case txt__3">des series ?</p>
+                        </div>
+                        <!-- slide__2 -->
+                        <div class="slide__wrap__2" id="slide__wrap__2">
+                            <p class="upper__case txt__4">avec</p>
+                            <p class="upper__case separator txt__5">
+                                le pack konnecté
+                            </p>
+                            <p class="upper__case light__text txt__6">
+                                à partie de
+                            </p>
+                            <p class="upper__case txt__7">99€*</p>
+                        </div>
+                        <!-- slide__3 -->
+                        <div class="slide__wrap__3" id="slide__wrap__3">
+                            <p class="upper__case txt__8">
+                                2 paires à la vue :
+                            </p>
+                            <p class="upper__case txt__9">1 optique</p>
+                            <p class="upper__case txt__10">
+                                anti-limière bleue
+                            </p>
+                            <p class="upper__case txt__11">+ 1 solaire **</p>
+                        </div>
+                        <!-- slide__4 -->
+                        <div class="slide__wrap__4" id="slide__wrap__4">
+                            <p class="upper__case txt__12">opticien Krys</p>
+                            <p class="upper__case txt__13">24 rue de bezons,</p>
+                            <p class="upper__case txt__14">92400 courbevoie</p>
+                            <!-- Button -->
+                            <button class="btn__slide" role="button">
+                                <img
+                                    src="./asset/image/btn.png"
+                                    alt="Me rendre en magazin"
+                                />
+                            </button>
+                        </div>
+                        <!-- Therm of the contrat -->
+                        <p class="therm__of__contrat" id="therm__of__contrat">
+                            * Prix de vente TTC conseillé en magasin. ** Du
+                            24/08/2017 au 31/10/2017 Voir conditions complètes
+                            <a href="krys.com/offre-rentree-2017"
+                                >krys.com/offre-rentree-2017</a
+                            >
+                            Dispositif médical. Consultez un professionnel de
+                            santé.
+                        </p>
+                    </div>
+                </div>
+                <!-- Bottom of page -->
+                <div class="bot">
+                    <!-- Video -->
+                    <video class="video" autoplay loop muted>
+                        <source
+                            src="./asset/video/boucle.mp4"
+                            type="video/mp4"
+                        />
+                    </video>
+                    <!-- Google Map -->
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.0398604085212!2d2.2474900158284163!3d48.89557750604145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e665090fed5893%3A0xfa86afc3832ede8d!2s24%20Rue%20de%20Bezons%2C%2092400%20Courbevoie!5e0!3m2!1sfr!2sfr!4v1626469370837!5m2!1sfr!2sfr"
+                        width="100%"
+                        id="map"
+                        height="50%"
+                        style="border: 0"
+                        allowfullscreen=""
+                        loading="lazy"
+                    ></iframe>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
